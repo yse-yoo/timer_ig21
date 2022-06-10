@@ -6,6 +6,13 @@ import javax.swing.JLabel;
 
 public class Window extends JFrame{
 
+	//コンストラクタ
+	public Window() {
+		super();
+		loadImages();
+		createWindow();
+	}
+
 	//画像を表示するラベル
 	public JLabel label;
 	//画像の枚数
@@ -31,8 +38,13 @@ public class Window extends JFrame{
 
 	//フレーム作成
 	public void createWindow() {
-		
+		setBounds(0, 0, 1000, 1000);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		label = new JLabel();
+		add(label);
+		setVisible(true);
 	}
+
 
 }
 
