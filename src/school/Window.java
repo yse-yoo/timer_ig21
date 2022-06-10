@@ -29,5 +29,10 @@ public class Window extends JFrame{
 		}
 	}
 
+	//フレーム作成
+	public void createWindow() {
+		
+	}
+
 }
 
