@@ -20,5 +20,14 @@ public class Window extends JFrame{
 	final String IMAGE_EXT = ".jpg";
 
 
+	//画像の初期化メソッド
+	public void loadImages() {
+		for (int i = 0; i < images.length; i++) {
+			//画像パス
+			String path = "./images/" + IMAGE_PREFIX + (i + 1) + IMAGE_EXT;
+			images[i] = new ImageIcon(path);
+		}
+	}
+
 }
 
