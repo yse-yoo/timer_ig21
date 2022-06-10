@@ -3,9 +3,11 @@ package sample;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import javax.swing.JFrame;
+
 public class SecondsTimer {
 	
-	public static int seconds = 5;
+	public static int seconds = 3;
 
 	public static void main(String[] args) {
 		
@@ -23,6 +25,10 @@ public class SecondsTimer {
 			public void run() {
 				//タイマーが発生すると実行される
 				System.out.println("実行しました！");
+				
+				JFrame frame = new JFrame();
+				frame.setBounds(500, 200, 500, 500);
+				frame.setVisible(true);
 			}
 		};
 
