@@ -45,6 +45,14 @@ public class Window extends JFrame{
 		setVisible(true);
 	}
 
+	//ラベルに画像を更新する（アニメーション）
+	public void animate() {
+		label.setIcon(images[index]);
+		//次の画像のインデックス
+		index++;
+		//もし最後の画像だったら0
+		if (index >= images.length) index = 0;
+	}
 
 }
 
