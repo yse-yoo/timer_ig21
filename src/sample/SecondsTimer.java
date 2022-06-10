@@ -5,7 +5,7 @@ import java.util.TimerTask;
 
 public class SecondsTimer {
 	
-	public static int seconds = 3;
+	public static int seconds = 5;
 
 	public static void main(String[] args) {
 		
@@ -22,9 +22,12 @@ public class SecondsTimer {
 			@Override
 			public void run() {
 				//タイマーが発生すると実行される
-				
+				System.out.println("実行しました！");
 			}
 		};
+
+		//スケジュール
+		timer.schedule(task, ms);
 	}
 
 }
